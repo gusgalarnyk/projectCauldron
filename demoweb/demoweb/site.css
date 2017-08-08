@@ -1,0 +1,417 @@
+/*Applicable for all pages*/
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    color: #393b40;
+    padding: 30px;
+}
+.background-image {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre-big.png');
+  background-color: #515861;
+  width: 10000px;
+  height: 10000px;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #c5c3bf; /*lighter text section*/
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border-bottom: 3px solid #2b2c2f;
+    color: #2b2c2f;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+h2 {
+    width: 1000px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border-bottom: 2px solid #2b2c2f;
+    color: #2b2c2f;
+    font-size: 22px;
+    text-align: center;
+    margin: auto;
+}
+
+h3 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #2b2c2f;
+    font-size: 16px;
+    border-bottom: 2px solid #2b2c2f;
+    text-align: center;
+    margin: 0px;
+}
+
+h4 {
+  color: #ffffff;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  border-bottom: 2px solid #ffffff; 
+}
+
+ul#skill {
+    list-style-image: url('http://files.softicons.com/download/toolbar-icons/mono-general-icons-4-by-custom-icon-design/png/16x16/wrench.png');
+}
+
+ul#proj {
+    list-style-image: url('http://www.ideaone.com.my/images/lightbulb.png');
+}
+
+ul#snap {
+    list-style-type: square;
+}
+
+ul#people {
+    list-style-image: url('http://files.softicons.com/download/web-icons/bijou-icons-by-visual-idiot/png/10x10/Person.png');
+}
+
+#sidebar {
+    position: absolute;
+    top: 220px; bottom: 0; left: 50px;
+    width: 250px;
+    padding: 7px;
+    background-color: black;
+    background-image: url('https://www.transparenttextures.com/patterns/swirl.png');
+    z-index: -1;
+    color: #c5c3bf;
+}
+
+/*Project*/
+#project {
+    position: relative;
+    margin-left: 275px;
+    width: 1070px;
+    height: 210px;
+    line-height: 200px;
+    margin-top: 15px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #c5c3bf;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+    background-position: left;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+#project:hover {
+    -moz-box-shadow: 0 0 8px white;
+    -webkit-box-shadow: 0 0 8px white;
+    box-shadow: 0 0 8px white;
+}
+
+#sum {
+    width: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+}
+
+#pic {
+    width: 110px;
+}
+
+#skused, #skne {
+    width: 200px;
+}
+
+#ppl {
+    width: 300px;
+    text-align: center;
+}
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul.side {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul.side li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Darker background-color on hover */
+ul.side li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul.side li.checked {
+  background: #888;
+  color: #fff;
+}
+
+/* Add a "checked" mark when clicked on */
+ul.side li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/*Used for both project and network */
+span
+{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 19px; /*<-- adjust this*/
+}
+
+#table {
+    margin: auto;
+    width: 1000px;
+    float: left;
+    padding: 10px;
+    height: 170px;
+}
+
+th {
+    padding: 0px;
+}
+
+#prpeople {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+}
+
+
+/*Network*/
+#network {
+    position: relative;
+    margin-left: 325px;
+    width: 1060px;
+    height: 210px;
+    line-height: 200px;
+    margin-top: 10px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #c5c3bf;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+    background-position: left;
+}
+
+#bio {
+    width: 300px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+}
+
+#skills {
+    width: 200px;
+}
+
+#nproj {
+    width: 200px;
+}
+
+#nsnap {
+    width: 190px;
+}
+
+/*Navigational menu*/
+ul#menu {
+    padding: 20px 40px;
+    margin-bottom: 5px;
+    background-color: #2b2c2f;
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#menu li a {
+    background-color: #2b2c2f;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #c5c3bf;
+    -o-transition:color 0.5s ease-out, background 0.5s ease-in;
+    -ms-transition:color 0.5s ease-out, background 0.5s ease-in;
+    -moz-transition:color 0.5s ease-out, background 0.5s ease-in;
+    -webkit-transition:color 0.5s ease-out, background 0.5s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color 0.5s ease-out, background 0.5s ease-in;
+}
+
+ul#menu li a:hover {
+    color: #c5c3bf;
+    background-color: #2f4f4f;
+}
+
+ul#menu li a.active {
+    color: #c5c3bf;
+    background-color: #2f4f4f;
+}
+
+/*Front pages*/
+#front {
+    text-align: center;
+    margin-top: 170px;
+    background-color: none;
+    border: none;
+    color: #c5c3bf;
+    text-shadow: 0px 0px 10px #484b50;
+}
+
+.button{
+    color: #c5c3bf;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2b2c2f;
+    display: inline-block;
+    font-size: 16px;
+    -o-transition:color 0.5s ease-out, background 0.5s ease-in;
+    -ms-transition:color 0.5s ease-out, background 0.5s ease-in;
+    -moz-transition:color 0.5s ease-out, background 0.5s ease-in;
+    -webkit-transition:color 0.5s ease-out, background 0.5s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color 0.5s ease-out, background 0.5s ease-in;
+}
+
+.button:hover{
+    color: #c5c3bf;
+    background-color: #4d0039
+    ;
+}
+
+.form-style {
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-style label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+.form-style input[type=text], 
+.form-style input[type=date],
+.form-style input[type=datetime],
+.form-style input[type=number],
+.form-style input[type=search],
+.form-style input[type=time],
+.form-style input[type=url],
+.form-style input[type=email],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #2b2c2f;
+    padding: 7px;
+    margin:0px;
+    background-color: #484b50;
+    -webkit-transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    -ms-transition: all 0.50s ease-in-out;
+    -o-transition: all 0.50s ease-in-out;
+    outline: none;  
+}
+.form-style input[type=text]:focus, 
+.form-style input[type=date]:focus,
+.form-style input[type=datetime]:focus,
+.form-style input[type=number]:focus,
+.form-style input[type=search]:focus,
+.form-style input[type=time]:focus,
+.form-style input[type=url]:focus,
+.form-style input[type=email]:focus,
+.form-style textarea:focus, 
+.form-style select:focus{
+    -moz-box-shadow: 0 0 8px #c5c3bf;
+    -webkit-box-shadow: 0 0 8px #c5c3bf;
+    box-shadow: 0 0 8px #c5c3bf;
+    border: 1px solid #c5c3bf;
+}
+.form-style .field-divided{
+    width: 49%;
+}
+
+.form-style .field-long{
+    width: 100%;
+}
+.form-style .field-select{
+    width: 100%;
+}
+.form-style .field-textarea{
+    height: 100px;
+}
+.form-style input[type=submit], .form-style-1 input[type=button]{
+    color: #c5c3bf;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2b2c2f;
+    display: inline-block;
+    font-size: 16px;
+    -o-transition:color 0.5s ease-out, background 0.5s ease-in;
+    -ms-transition:color 0.5s ease-out, background 0.5s ease-in;
+    -moz-transition:color 0.5s ease-out, background 0.5s ease-in;
+    -webkit-transition:color 0.5s ease-out, background 0.5s ease-in;
+    /* ...and now override with proper CSS property */
+    transition:color 0.5s ease-out, background 0.5s ease-in;
+}
+.form-style input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    color: #c5c3bf;
+    background-color: #2f4f4f;
+}
+
